@@ -251,3 +251,79 @@ html{
     font-size: 14px;
     line-height: 22px;
 }
+/*SECCION DE HABILIDADES*/
+.contenedor-skills{
+    background:linear-gradient(#2be2bacc, rgba(33,16,16,.8)), url("img/fondo-skills.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+.contenedor-skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+}
+.contenedor-skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(244, 248, 12);
+}
+.contenedor-skills .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+/*los estilos de progreso 1 se aplicaran con javascrip
+para lograr el efecto de la barra de porcentajes*/
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: red;
+    width: 80%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: red;
+    width: 70%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: red;
+    width: 70%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: red;
+    width: 80%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso5{
+    background-color: red;
+    width: 80%;
+    height: 6px;
+    animation: progreso5 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso6{
+    background-color: red;
+    width: 70%;
+    height: 6px;
+    animation: progreso6 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso7{
+    background-color: red;
+    width: 70%;
+    height: 6px;
+    animation: progreso7 2s forwards;
+}
