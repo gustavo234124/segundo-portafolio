@@ -35,7 +35,7 @@ html{
     padding: 10px 20px;
 }
 
-#inicio .contenido header .contenido-header h1{
+#inicio .contenido header .contenido-header h3{
     text-align: center;
     color:rgb(218, 153, 15);
 }
@@ -132,6 +132,7 @@ html{
     color: #111135;
     display: flex;
 }
+
 #sobremi .contenedor-foto{
     max-width: 400px;
     margin-right: 80px;
@@ -139,8 +140,12 @@ html{
 #sobremi .contenedor-foto img{
     padding: 20px;
     width: 100%;
-    border-radius: 120px;
+    border-radius: 80px;
+    border: 9px solid lightblue;
     background-color: #d65c3d;
+}
+#sobremi img{
+    height: 100%;
 }
 #sobremi .sobremi{
     margin: 0 4px;
@@ -557,4 +562,63 @@ footer a{
         width: 100%;
         margin-bottom: 15px;
     }
+}
+
+
+
+
+  /* Estilos para el botón de enviar */
+  .btn-enviar {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para el fondo del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content{
+    font-family: cursive;
+    background-color: green;
+    border-radius: 10px;
+}
+.modal-content span{
+   color: red;
+   font-size: 50px;
 }

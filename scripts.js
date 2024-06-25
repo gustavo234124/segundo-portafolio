@@ -37,3 +37,32 @@ function efectoHabilidades(){
 
     }
 }
+
+//codigo para enviar mensaje del formulario
+document.getElementById("submit").addEventListener("click", function(e) {
+    // Previene el comportamiento por defecto del formulario
+    e.preventDefault();
+
+    // Cambia el texto del botón a "Enviado"
+    this.value = "Enviado";
+
+    // Desactiva el botón para prevenir múltiples envíos
+    this.disabled = true;
+
+    // Muestra el modal
+    var modal = document.getElementById("miModal");
+    modal.style.display = "block";
+
+    // Cierra el modal al hacer clic en la "x"
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // Cierra el modal al hacer clic fuera del contenido del modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+});
