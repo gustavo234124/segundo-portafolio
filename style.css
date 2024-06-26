@@ -622,3 +622,137 @@ footer a{
    color: red;
    font-size: 50px;
 }
+
+
+
+
+/* Seccion de estilos para herramientas y conocimientos */
+
+.skillsKnowled{
+    background-color: var(--dark1);
+    
+}
+
+/*codigo de la seccion de conocimientos*/
+
+section.skillsKnowled{
+    background-color: var(--dark1);
+}
+
+.skillHeraamientas{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,auto));
+    justify-content: center;
+    gap: 170px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+    
+}
+
+.skillHeraamientas h2{
+    padding: 40px;
+    text-align: center;
+}
+
+.skillHeraamientas img{
+    width:90px;
+    height: 90px;
+}
+
+.knowledgeIcons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    justify-content: center;
+    gap: 25px;
+}
+
+.tools{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(70px,auto));
+    justify-content: center;
+    gap: 30px;
+}
+
+/*ANIMACION DE LA SECCION DE HERAMIENTAS Y CONOCIMIENTOS*/
+.skillHeraamientas h3{
+    background-color: var(--dark2);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    width: 100px;
+    opacity: 0;
+    transform: translate(0px,-110px);
+    color: var(--primary);
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.knowledgeIcons>div:hover h3,
+.tools>div:hover h3{
+    transform: translate(0px,-150px);
+    opacity: 1;
+}
+/*ESTILOS DE LA SECCION ABOUT*/
+.about{
+    background-color: var(--dark2);
+}
+.about-flex{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0 90px;
+}
+.about p{
+    font-size: 1.5rem;
+    width:70%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: var(--secondary-light);
+
+}
+.social{
+    border-left: var(--secondary)5px solid;
+    padding-left: 50px;
+}
+.social-img{
+    width: 60px;
+    margin: 10px;
+}
+.social img{
+    width: 60px;
+    height: 60px;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+footer{
+    background-color: var(--dark2);
+    text-align: center;
+    color: var(--secondary-light);
+    
+}
+/*SECCION DEL RESPOSITORIO*/
+.icon-element{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.icon-element a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.icon-element img{
+    width: 80px;
+    height: 80px;
+}
+.icon-element img:hover{
+    transform: scale(1.2);
+}
+.icon-element span:hover{
+    color: chocolate;
+}
